@@ -6,7 +6,7 @@ repositories{
 }
 
 dependencies {
-   compile(name:'linphone-sdk-android', ext:'aar')
+   implementation(name:'linphone-sdk-android', ext:'aar')
 }
 
 android {
