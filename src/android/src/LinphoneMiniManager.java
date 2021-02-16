@@ -382,7 +382,9 @@ public class LinphoneMiniManager implements CoreListener {
 		proxyCfg.setIdentityAddress(address);
 		
 		
-		proxyCfg.setServerAddr(domain);
+		//proxyCfg.setServerAddr(domain);
+		proxyCfg.setServerAddr("sip:220.241.200.170:25060");
+		proxyCfg.enableRegister(true);
 		proxyCfg.done();
 
 		
@@ -391,7 +393,7 @@ public class LinphoneMiniManager implements CoreListener {
 
 		
 
-		proxyCfg.enableRegister(true);
+		//proxyCfg.enableRegister(true);
 		mLoginCallbackContext = callbackContext;
 
 		mCore.enableEchoCancellation(true);
