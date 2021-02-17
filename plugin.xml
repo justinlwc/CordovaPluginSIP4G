@@ -43,7 +43,8 @@
 
     <framework src="src/android/libs/sip.gradle" custom="true" type="gradleReference" />
 
-    <resource-file src="src/android/libs/linphone-sdk-android.aar" target="libs/linphone-sdk-android.aar" />
+    <!--<resource-file src="src/android/libs/linphone-sdk-android.aar" target="libs/linphone-sdk-android.aar" />-->
+    <resource-file src="src/android/libs/linphone-sdk-android.aar" target="lib" framework="true"/>
 
     <js-module src="www/cordova-plugins-sip.js" name="linphone">
       <merges target="cordova.plugins.sip" />
